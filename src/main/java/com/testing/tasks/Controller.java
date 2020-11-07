@@ -34,8 +34,7 @@ public class Controller {
         // Set random number
         randomNumber = model.getRandomNumber(model.getFirstNumber(), model.getSecondNumber());
         // Validate if it is not a number
-        //model.validateTheInput(scanner);
-        model.validateInput(scanner);
+        model.validateTheInput(scanner);
         // Get integer number
         next = scanner.nextInt();
         // Add all integer number
@@ -58,8 +57,7 @@ public class Controller {
                         + View.DOT_SIGN + " " + View.BE_CAREFUL);
             }
             attempts++;
-            //model.validateTheInput(scanner);
-            model.validateInput(scanner);
+            model.validateTheInput(scanner);
             next = scanner.nextInt();
             listOfAllNumbers.add(next);
         }

@@ -88,24 +88,4 @@ public class GuessNumberTests {
         assertEquals(secondNumber, newNumbers.get(1));
     }
 
-    @Test
-    public void testNotIntegerInput() {
-        String testString = "Hello!";
-        provideInput(testString);
-        scanner = new Scanner(System.in);
-        model.validateTheIntegerInput(scanner);
-        scanner.close();
-        assertEquals(View.INPUT_NOT_INTEGER, getOutput());
-    }
-
-    @Test
-    public void testIntegerInput() {
-        String testInteger = "98";
-        provideInput(testInteger);
-        scanner = new Scanner(System.in);
-        model.validateTheIntegerInput(scanner);
-        new View().printMessageWithoutNewLine(scanner.next());
-        scanner.close();
-        assertEquals(testInteger, getOutput());
-    }
 }
