@@ -40,11 +40,6 @@ public class GuessNumberTests {
         System.setIn(testIn);
     }
 
-    private void provideInput(byte[] data) {
-        testIn = new ByteArrayInputStream(data, 1, 1);
-        System.setIn(testIn);
-    }
-
     private String getOutput() {
         return testOut.toString();
     }

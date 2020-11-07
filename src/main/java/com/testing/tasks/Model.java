@@ -34,13 +34,6 @@ public class Model {
         return random.nextInt((max - min) + 1) + min;
     }
 
-    /*public void validateTheInput(Scanner scanner) {
-        while (!scanner.hasNextInt()) {
-            new View().printMessage(View.INPUT_NOT_INTEGER);
-            scanner.next();
-        }
-    }*/
-
     public void validateInput(Scanner scanner) {
         while (scanner.hasNext()) {
             validateTheIntegerInput(scanner);
