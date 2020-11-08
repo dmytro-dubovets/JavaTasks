@@ -1,4 +1,4 @@
-package com.testing.tasks;
+package com.testing.tasks.guessnumber;
 
 public class Run {
 

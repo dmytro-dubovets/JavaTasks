@@ -1,4 +1,4 @@
-package com.testing.tasks;
+package com.testing.tasks.guessnumber;
 
 import java.util.Collections;
 import java.util.List;

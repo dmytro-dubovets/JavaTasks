@@ -1,4 +1,4 @@
-package com.testing.tasks;
+package com.testing.tasks.guessnumber;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,6 @@ public class Controller {
         // Set random number
         randomNumber = model.getRandomNumber(model.getFirstNumber(), model.getSecondNumber());
         // Validate if it is not a number
-        //model.validateTheInput(scanner);
         model.validateInput(scanner);
         // Get integer number
         next = scanner.nextInt();

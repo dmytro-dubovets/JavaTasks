@@ -1,5 +1,7 @@
-import com.testing.tasks.Model;
-import com.testing.tasks.View;
+package guessnumbertests;
+
+import com.testing.tasks.guessnumber.Model;
+import com.testing.tasks.guessnumber.View;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
