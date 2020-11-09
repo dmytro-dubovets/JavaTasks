@@ -25,7 +25,7 @@ public class View {
         System.out.println(message);
     }
 
-    public void printMessageWithoutNewLine(String message) {
+    public static void printMessageWithoutNewLine(String message) {
         System.out.print(message);
     }
 

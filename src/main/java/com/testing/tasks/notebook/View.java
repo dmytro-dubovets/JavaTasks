@@ -11,4 +11,8 @@ public class View {
     public static void printMessage(String message) {
         System.out.println(message);
     }
+    public static void printMessageWithoutNewLine(String message) {
+        System.out.print(message);
+    }
+
 }
