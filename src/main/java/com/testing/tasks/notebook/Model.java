@@ -1,6 +1,5 @@
 package com.testing.tasks.notebook;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
