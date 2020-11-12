@@ -27,8 +27,11 @@ public class Model {
         return result;
     }
 
-    public void storeInfo(List<String> listOfInfo, String info) {
+    public void storeInfo(List<String> listOfInfo, String info) throws ExtraInformationException {
         listOfInfo.add(info);
+        if(listOfInfo.size() >=4) {
+            throw new ExtraInformationException();
+        }
     }
 
     public List<String> getInfo(List<String> listOfInfo) {

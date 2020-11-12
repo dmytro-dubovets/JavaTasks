@@ -15,7 +15,7 @@ public class Controller {
         this.view = view;
     }
 
-    public void userProcess() {
+    public void userProcess() throws ExtraInformationException {
         scanner = new Scanner(System.in);
         list = new ArrayList<>();
         String lastname, firstname, surname;
@@ -29,6 +29,11 @@ public class Controller {
         View.printMessage(View.INPUT_SURNAME);
         surname = model.inputRegex(scanner, Model.SURNAME_REGEX);
         model.storeInfo(list,surname);
+        try {
+            model.storeInfo(list, "some new information");
+        } catch (ExtraInformationException e) {
+            e.printStackTrace();
+        }
         String result = model.getLastnameFirstnameSurname(list);
         if(list.size() > 0) {
             View.printMessage(result);
