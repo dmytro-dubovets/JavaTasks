@@ -37,8 +37,6 @@ public class Model {
     }
 
     public String getLastnameFirstnameSurname(List<String> listOfInfo) {
-        String result = null;
-        result = listOfInfo.get(0) + " " + listOfInfo.get(1).charAt(0) + ".";
-        return result;
+        return listOfInfo.get(0) + " " + listOfInfo.get(1).charAt(0) + ".";
     }
 }
